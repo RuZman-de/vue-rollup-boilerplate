@@ -29,8 +29,8 @@
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-svg": "^2.0.0",
-    {{#vuetify}}"rollup-plugin-vue": "^5.1.6",{{/vuetify}}
-    "rollup-plugin-vuetify": "^0.2.1",
+    "rollup-plugin-vue": "^5.1.6",
+    {{#vuetify}}"rollup-plugin-vuetify": "^0.2.1",{{/vuetify}}
     {{#vuetify}}"sass": "^1.19.0",{{/vuetify}}
     {{#vuetify}}"sass-loader": "^8.0.0",{{/vuetify}}
     {{#vuetify}}"vue-cli-plugin-vuetify": "~2.0.5",{{/vuetify}}
