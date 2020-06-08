@@ -22,6 +22,10 @@
 		"vuex": {
 			"type": "confirm",
 			"message": "Do you want install vuex?"
+		},
+		"vuetify": {
+			"type": "confirm",
+			"message": "Do you want install vuetify?"
 		}
 	}
 }

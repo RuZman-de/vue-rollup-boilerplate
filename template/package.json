@@ -11,7 +11,8 @@
   "dependencies": {
     "vue": "^2.6.11"{{#router}},
     "vue-router": "^3.1.3"{{/router}}{{#vuex}},
-    "vuex": "^3.1.2"{{/vuex}}
+    "vuex": "^3.1.2"{{/vuex}}{{#vuetify}},
+    "vuetify": "^3.1.3"{{/vuetify}},
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
@@ -27,8 +28,14 @@
     "rollup-plugin-postcss": "^3.1.1",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-serve": "^1.0.1",
-    "rollup-plugin-vue": "^5.1.6",
-    "vue-template-compiler": "^2.6.11"
+    "rollup-plugin-svg": "^2.0.0",
+    {{#vuetify}}"rollup-plugin-vue": "^5.1.6",{{/vuetify}}
+    "rollup-plugin-vuetify": "^0.2.1",
+    {{#vuetify}}"sass": "^1.19.0",{{/vuetify}}
+    {{#vuetify}}"sass-loader": "^8.0.0",{{/vuetify}}
+    {{#vuetify}}"vue-cli-plugin-vuetify": "~2.0.5",{{/vuetify}}
+    "vue-template-compiler": "^2.6.11"{{#vuetify}},
+    "vuetify-loader": "^1.3.0"{{/vuetify}}
   },
   "husky": {
     "hooks": {
