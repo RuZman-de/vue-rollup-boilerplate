@@ -24,8 +24,20 @@
       "label": "Do you want install vuex?"
     },
     "vuetify": {
-      "type": "confirm",
-      "label": "Do you want install vuetify?"
+      "type": "list",
+      "message": "Use vuetify",
+      "choices": [
+        {
+          "name": "Yes",
+          "value": "vuetify",
+          "short": "vuetify"
+        },
+        {
+          "name": "No",
+          "value": "default",
+          "short": "default"
+        }
+      ]
     }
   },
   "filters": {

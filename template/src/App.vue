@@ -1,5 +1,4 @@
-<!--
-<template>
+{{#if_eq vuetify "default"}}<template>
   <div class="app">
     <hello></hello>
   </div>
@@ -33,9 +32,7 @@ body {
     align-items: center;
 }
 </style>
-
--->
-{{#vuetify}}<template>
+{{/if_eq}}{{#if_eq vuetify "vuetify"}}<template>
   <v-app>
     <v-app-bar
       app
@@ -95,4 +92,4 @@ export default {
   }),
 };
 </script>
-{{/vuetify}}
+{{/if_eq}}
