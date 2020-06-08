@@ -14,36 +14,7 @@
     "author": {
       "type": "string",
       "label": "Author"
-    },
-    "router": {
-      "type": "confirm",
-      "label": "Do you want install vue-router?"
-    },
-    "vuex": {
-      "type": "confirm",
-      "label": "Do you want install vuex?"
-    },
-    "vuetify": {
-      "type": "list",
-      "message": "Use vuetify",
-      "choices": [
-        {
-          "name": "Yes",
-          "value": "vuetify",
-          "short": "vuetify"
-        },
-        {
-          "name": "No",
-          "value": "default",
-          "short": "default"
-        }
-      ]
     }
-  },
-  "filters": {
-    "plugins/vuetify.js": "vuetify",
-    "components/HelloWorld.vue": "vuetify",
-    "assets/logo.svg": "vuetify"
   },
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev"
 }
