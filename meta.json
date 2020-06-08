@@ -1,31 +1,48 @@
 {
-	"schema": {
-		"name": {
-			"type": "string",
-			"required": true,
-			"message": "Project name"
-		},
-		"description": {
-			"type": "string",
-			"required": false,
-			"message": "Project description",
-			"default": "A Vue.js project"
-		},
-		"author": {
-			"type": "string",
-			"label": "Author"
-		},
-		"router": {
-			"type": "confirm",
-			"message": "Do you want install vue-router?"
-		},
-		"vuex": {
-			"type": "confirm",
-			"message": "Do you want install vuex?"
-		},
-		"vuetify": {
-			"type": "confirm",
-			"message": "Do you want install vuetify?"
-		}
-	}
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "message": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "message": "Project description",
+      "default": "A Vue.js project"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "router": {
+      "type": "confirm",
+      "message": "Do you want install vue-router?"
+    },
+    "vuex": {
+      "type": "confirm",
+      "message": "Do you want install vuex?"
+    },
+    "vuetify": {
+      "type": "confirm",
+      "message": "Do you want install vuetify?"
+    }
+  },
+  "filters": {
+    "vuetify.js": "vuetify",
+    "HelloWorld.vue": "vuetify",
+    "logo.svg": "vuetify"
+  },
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev"
+}
+
+
+
+
+
+
+
+{
+  "schema": {
+  }
 }
