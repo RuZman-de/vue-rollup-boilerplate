@@ -62,7 +62,7 @@
             class="subheading mx-3"
             target="_blank"
           >
-            {{ link.text }}
+            \{{ link.text }}
           </a>
         </v-row>
       </v-col>
@@ -83,7 +83,7 @@
             class="subheading mx-3"
             target="_blank"
           >
-            {{ eco.text }}
+            \{{ eco.text }}
           </a>
         </v-row>
       </v-col>
