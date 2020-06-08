@@ -41,7 +41,7 @@
             class="subheading mx-3"
             target="_blank"
           >
-            {{ next.text }}
+            \{{ next.text }}
           </a>
         </v-row>
       </v-col>
