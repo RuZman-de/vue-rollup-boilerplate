@@ -3,7 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import vue from 'rollup-plugin-vue';
-{{#vuetify}}import vuetify from 'rollup-plugin-vuetify';{{/vuetify}}
+import vuetify from 'rollup-plugin-vuetify';
 import svg from 'rollup-plugin-svg';
 import esbuild from 'rollup-plugin-esbuild';
 import serve from 'rollup-plugin-serve';
@@ -23,8 +23,8 @@ export default {
   plugins: [
     postcss({ extract: true }),
     vue({ css: false }),
-	svg(),{{#vuetify}}
-	vuetify(),{{/vuetify}}
+	svg(),
+	vuetify(),
     replace({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
