@@ -3,12 +3,12 @@
     "name": {
       "type": "string",
       "required": true,
-      "message": "Project name"
+      "label": "Project name"
     },
     "description": {
       "type": "string",
       "required": false,
-      "message": "Project description",
+      "label": "Project description",
       "default": "A Vue.js project"
     },
     "author": {
@@ -17,15 +17,15 @@
     },
     "router": {
       "type": "confirm",
-      "message": "Do you want install vue-router?"
+      "label": "Do you want install vue-router?"
     },
     "vuex": {
       "type": "confirm",
-      "message": "Do you want install vuex?"
+      "label": "Do you want install vuex?"
     },
     "vuetify": {
       "type": "confirm",
-      "message": "Do you want install vuetify?"
+      "label": "Do you want install vuetify?"
     }
   },
   "filters": {
