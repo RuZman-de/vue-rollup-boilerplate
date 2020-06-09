@@ -27,6 +27,7 @@ export default {
 	vuetify(),
     replace({
       'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.BUILD': JSON.stringify('web'),
     }),
     resolve({ extensions: ['.js', '.vue'], browser: true, preferBuiltins: true }),
     commonjs(),
