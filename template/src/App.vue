@@ -40,6 +40,7 @@
     <v-content>
       <router-link to="/">Go to Home</router-link>
       <router-link to="/vuelidate">Go to Vuelidate</router-link>
+      <router-link to="/counter">Go to Counter</router-link>
       <br>
       <router-view></router-view>
     </v-content>
