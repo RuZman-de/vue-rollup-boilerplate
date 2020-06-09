@@ -38,19 +38,20 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <router-link to="/">Go to Home</router-link>
+      <router-link to="/vuelidate">Go to Vuelidate</router-link>
+      <br>
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-  import HelloWorld from './components/HelloWorld';
 
   export default {
     name: 'App',
 
     components: {
-      HelloWorld,
     },
 
     data: () => ({
