@@ -8,6 +8,7 @@ import svg from 'rollup-plugin-svg';
 import esbuild from 'rollup-plugin-esbuild';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
+import json from '@rollup/plugin-json';
 
 const production = !process.env.ROLLUP_WATCH;
 const port = 8080;
@@ -21,10 +22,11 @@ export default {
     name: 'app',
   },
   plugins: [
+    json(),
     postcss({ extract: true }),
     vue({ css: false }),
-	svg(),
-	vuetify(),
+    svg(),
+    vuetify(),
     replace({
       'process.env.NODE_ENV': JSON.stringify('production'),
       'process.env.BUILD': JSON.stringify('web'),
@@ -36,12 +38,12 @@ export default {
       target: 'es2015',
     }),
     !production &&
-      serve({
-        open: true,
-        contentBase: 'public',
-        historyApiFallback: true,
-        port,
-      }),
+    serve({
+      open: true,
+      contentBase: 'public',
+      historyApiFallback: true,
+      port,
+    }),
     !production && livereload({ watch: 'public' }),
   ],
 };
