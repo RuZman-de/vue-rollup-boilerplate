@@ -1,6 +1,6 @@
 <template>
 <div>
-   <p>\{{ $t("message.hello", {usr: 'Buddy'}) }}</p>
+   <p>{{ $t("message.hello", {usr: 'Buddy'}) }}</p>
    <v-combobox
      v-model="$root.$i18n.locale"
      :items="langs"
